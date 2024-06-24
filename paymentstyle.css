@@ -16,6 +16,12 @@ body {
 
 h2 {
   text-align: center;
+  margin-top: 0; /* Add this to remove default margin */
+  padding-top: 10px; /* Add padding for spacing */
+  background-color: #16a290;
+  color: #fff;
+  padding: 10px;
+  border-radius: 5px;
 }
 
 .file-list {
@@ -44,4 +50,24 @@ h2 {
 
 .download-link:hover {
   background-color: #45a049;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .container {
+    padding: 10px;
+  }
+
+  h2 {
+    font-size: 24px;
+  }
+
+  .file-item {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .download-link {
+    margin-top: 10px;
+  }
 }
